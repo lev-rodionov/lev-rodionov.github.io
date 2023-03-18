@@ -1,0 +1,712 @@
+body {
+    font-family: Tahoma;
+    margin: 0;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+
+/* Container
+====================================================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    display: flex;
+
+ }
+
+.container_center {
+    width: 100%;
+    max-width: 1030px;
+    margin: 15px auto;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+
+/* Header
+====================================================*/
+.header {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+.header.fixed {
+    position: fixed;
+    background: #78ad51;
+    height: auto;
+    padding: 0;
+}
+
+
+
+/* Nav
+====================================================*/
+.nav {
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+
+
+
+.nav_link {
+    margin-left: 15px;
+    color: #030303;
+    text-decoration: none;
+}
+
+
+.nav_link:first-child{
+    margin-left: 0;
+}
+
+
+.nav_link:hover {
+
+    text-decoration: underline;
+}
+
+/* Block-1
+====================================================*/
+
+.b1 {
+    height: 100vh;
+    padding-top: 80px;
+    background: #fff url("../img/blocks/bg.jpg") center no-repeat;
+    background-size: cover;
+
+
+}
+
+.b1_container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+
+    justify-content: flex-end;
+    padding-right: 100px;
+    padding-top: 50px;
+
+
+}
+
+.b1_inner {
+    height: 100%;
+    width:  40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+
+.b1_title {
+    text-align: center;
+    width: 100%;
+
+}
+
+.b1_window {
+    width: 100%;
+
+    border: 2px solid black;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+}
+
+
+.b1_title2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+
+
+}
+.b1_text {
+    font-family: Tahoma;
+    font-size: 18px;
+    text-align: center;
+    line-height: 15px;
+    padding: 0 10px;
+
+}
+
+.container-btn {
+    text-align: center;
+
+
+}
+
+/* Кнопка
+====================================================*/
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    margin: 10px;
+
+    font-size: 20px;
+    line-height: 15px;
+    color: #000000;
+    font-weight: 800;
+    text-decoration: none;
+    border: 1px solid black;
+
+    cursor: pointer;
+    background-color: #ffcc33;
+    border-radius: 5px;
+    transition: background .2s linear;
+
+
+}
+
+
+.btn:hover {
+    background-color: #fff;
+
+}
+
+.b1_title h1 {
+    line-height: 1;
+}
+
+/* Block-2
+====================================================*/
+
+.b2 {
+    height: auto;
+    background: #78ad51;
+
+}
+
+
+.b2_container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.b2_inner {
+    height: auto;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.b2_title {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 22px;
+    background: #78ad51;
+
+}
+
+.b2_title h3{
+    text-align: center;
+
+
+
+    text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0),2px 2px 1px rgba(0,0,0,1);
+    -webkit-text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0),2px 2px 1px rgba(0,0,0,1);
+    -moz-text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0),2px 2px 1px rgba(0,0,0,1);
+    font-size:32px;
+    color:rgb(255, 255, 255);
+    font-family:Tahoma, Geneva, sans-serif;
+}
+
+/* Features
+====================================================*/
+.features {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;/*будут в столбик если не вмещаются*/
+
+    margin-bottom: 10px;
+}
+
+
+.features_title {
+    width: 190px;
+    text-align: center;
+    line-height: 15px;
+    padding: 10px 0;
+
+
+}
+.features_icon {
+
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+
+
+
+/* Block-3
+====================================================*/
+.b3 {
+    padding-top: 25px;
+    background: #fff url("../img/blocks/bg3.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+
+
+}
+.b3_container {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.b3_title {
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.b3_title h5{
+    text-align: center;
+
+
+
+    text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0),2px 2px 1px rgba(0,0,0,1);
+    -webkit-text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0),2px 2px 1px rgba(0,0,0,1);
+    -moz-text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0),2px 2px 1px rgba(0,0,0,1);
+    font-size:32px;
+    color:rgb(255, 255, 255);
+    font-family:Tahoma, Geneva, sans-serif;
+}
+
+.b3_inner {
+    height: 700px;
+    width: 65%;
+    max-width: 1100px;
+    padding-left: 100px;
+
+}
+
+
+
+/*Список*/
+.list {
+font-size: 20px;
+
+
+}
+ol {
+    list-style-type: none;
+
+}
+
+summary {
+    font-weight: bold;
+
+}
+
+
+
+/* Block-4
+====================================================*/
+.b4 {
+    height: 100vh;
+    padding-top: 22px;
+    background: #000;
+
+
+
+}
+
+.b4_container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+
+}
+
+.b4_title {
+    text-align: center;
+
+
+}
+
+.b4_title h6{
+    text-align: center;
+
+
+
+
+    text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0),2px 2px 1px rgba(0,0,0,1);
+    -webkit-text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0),2px 2px 1px rgba(0,0,0,1);
+    -moz-text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0),2px 2px 1px rgba(0,0,0,1);
+    font-size:32px;
+    color:rgb(255, 255, 255);
+    font-family:Tahoma, Geneva, sans-serif;
+}
+
+.b4_photo {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    overflow: hidden;/*чтобы не вылезало ничего*/
+
+}
+
+.photo {
+    height: 590px;
+}
+
+
+.reviews_img {
+    height: 100%;
+    width: 100%;
+    /*Высота картинки*/
+    object-fit: contain;
+    overflow: hidden;/*Если картинки большие чтобы не вылезали*/
+
+
+}
+
+
+/*Слайдер*/
+.reviews_slider {/*чтобы слайдер не прыгал*/
+    height: auto;/*высота слайдера*/
+    background: #000;
+
+}
+
+.reviews_slider.slick_initialized { /*чтобы слайдер не прыгал*/
+    height: auto;
+}
+
+
+
+/* burger
+====================================================*/
+
+
+.burger {
+    display: none;
+    padding: 9px 2px;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+.burger_item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    font-size: 0;
+    color: transparent;
+
+    position: relative;
+}
+.burger_item:before,
+.burger_item:after {
+    content: "";
+
+    height: 100%;
+
+    background-color: #000;
+
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.burger_item:before {
+    width: 30px;
+    top: -8px;
+
+
+
+}
+
+.burger_item:after {
+    width: 30px;
+    bottom: -8px;
+
+}
+
+/*Не работает*/
+details[open] > summary {
+    border: none;
+    background: #000;
+    color: #fff;
+
+}
+
+
+
+/* Media
+====================================================*/
+
+@media  (max-width: 991px) {
+    .b1 {
+        height: 100vh;
+    }
+
+    .b1_container {
+        padding: 0;/*media*/
+        align-items: center;/*media*/
+        justify-content: center;/*media*/
+    }
+    .b1_inner {
+        height: 80%;/*media*/
+        width: 95%;/*media*/
+        align-items: center;/*media*/
+    }
+
+    /*Шрифты*/
+    .b1_title {
+        font-size: 14px;
+
+
+
+    }
+    .b1_title2 {
+        font-size: 25px;
+    }
+    .b1_text {
+        font-size: 20px;
+        line-height:  25px;
+        font-weight: bold;
+
+
+    }
+    /*Кнопка*/
+    .btn {
+        font-size: 20px;
+    }
+
+
+
+
+    .features {
+        height: auto;
+    }
+
+    /*B1*/
+    .b1_window {
+        background: #fff;
+        opacity: .9;
+        width: 60%;
+    }
+
+    .b1_title {
+        width: 50%;
+    }
+
+
+    /*Burger*/
+    .nav {
+       display: none;
+        flex-direction: column;
+        width: 100%;
+
+        background-color: #fff;
+        text-align: right;
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+    .nav.show {
+        display: flex;
+
+    }
+
+
+    .nav_link {
+        padding: 9px  15px;/*отступы в бургере*/
+    }
+
+
+
+
+    /*Burger*/
+    .burger {
+        display: block;
+    }
+
+
+    /*Вопросы по центру*/
+    .b3_inner {
+        width: 100%;/*media*/
+        padding-left: 0;/*media*/
+    }
+    .b3_container {
+        align-items: center;/*media*/
+    }
+
+
+}
+
+@media  (max-width: 943px) {
+    .b1_title {
+        width: 55%;
+    }
+}
+
+
+
+
+@media  (max-width: 767px) {
+    .b1 {
+        background: #fff url("../img/blocks/bg0.jpg") center no-repeat;
+        background-size: cover;
+
+    }
+
+
+    .b1_window {
+        width: 85%;
+    }
+    .b1_title {
+        width: 80%;
+
+
+
+    }
+
+/*B3*/
+
+    .b3 {
+        background: #fff url("../img/blocks/bg00.jpg") center no-repeat;
+        background-size: cover;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 517px) {
+.b1_title {
+    width: 90%;
+
+}
+
+
+
+}
+
+
+
+
+@media (max-width: 488px) {
+.b1_inner {
+height: 90%;
+
+}
+}
+
+
+@media (max-width: 460px) {
+     .b1_title {
+       width: 100%;
+
+        }
+    }
+
+
+
+
+@media (max-width: 414px) {
+    h1 {
+        font-size: 25px;
+}
+
+}
+
+
+@media (max-width: 370px) {
+    .b1_inner {
+        height: 70%;
+    }
+
+    h1 {/*Лев Родионов - онлайн сервис помощи студентам*/
+        font-size: 20px;
+    }
+    .b1_title2 {/*Консультации*/
+        margin: 0;
+        font-size: 20px;
+    }
+    .b1_text {/*Заказать консультацию вы можете*/
+        font-size: 15px;
+        line-height: 0.9;
+
+    }
+    .list {
+        font-size: 15px;
+
+
+    }
+}
+
+
+
+@media (max-width: 281px) {
+
+}
+
+
