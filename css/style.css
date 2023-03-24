@@ -25,6 +25,70 @@ p {
     flex-direction: column;
 
 }
+/* Table
+====================================================*/
+table {
+    display: flex;
+    padding-top: 10px;
+    text-align: center;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+.main {
+
+    border-top: 1px solid #8c8c8c;
+}
+
+.str {
+    border-top: 1px solid #8c8c8c;
+    transition: .5s;
+
+
+}
+th {
+
+    font-weight: 300;
+    color: #8c8c8c;
+    text-transform: uppercase;
+    font-size: 15px;
+
+
+}
+td:first-child {/*Отступ Курсовая*/
+    padding-left: 5px;
+    text-align: left;
+}
+
+td:last-child {/*Отступ 2.000*/
+    padding-right: 5px;
+    text-align: right;
+
+}
+th:first-child {/*Отступ Тип*/
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 200px;
+}
+
+th:last-child {/*Отступ Цена от*/
+    text-align: right;
+    padding-right: 5px;
+
+}
+
+.str:hover {
+    background-color: #8c8c8c;
+    color: #fff;
+}
+
+
+
 
 
 
@@ -121,13 +185,15 @@ p {
 }
 
 .b1_container {
-    height: 300px;
+    height: 400px;
     width: 100%;
     display: flex;
 
     justify-content: flex-end;
     padding-right: 100px;
-    padding-top: 50px;
+
+
+
 
 
 }
@@ -151,9 +217,9 @@ p {
 
 .b1_window {
     width: 100%;
-
     border: 2px solid black;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+margin-top: 15px;
 
 }
 
@@ -280,12 +346,21 @@ p {
     width: 190px;
     text-align: center;
     line-height: 15px;
-    padding: 10px 0;
-
+    padding: 15px 0;
 
 }
-.features_icon {
 
+.features_item {
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;/*флексы друг под другом*/
+}
+
+
+.features_icon {
+    display: flex;
+    margin: auto;
     background: #fff;
     padding: 30px;
     border-radius: 5px;
@@ -648,6 +723,8 @@ details[open] {
         background: #fff;
         opacity: .9;
         width: 60%;
+
+
     }
 
     .b1_title {
@@ -792,10 +869,27 @@ height: 90%;
         font-size: 25px;
 }
 
+
+    .features_icon {
+    padding: 10px;
+}
+    th:first-child {/*Отступ Тип*/
+        padding-right: 150px;
+    }
+
+
+
 }
 
 
+
+
 @media (max-width: 370px) {
+    .b1 {
+        padding-top: 0;
+    }
+
+
     .b1_inner {
         height: 70%;
     }
@@ -814,9 +908,11 @@ height: 90%;
     }
     .list {
         font-size: 15px;
-
-
     }
+    th:first-child {/*Отступ Тип*/
+        padding-right: 100px;
+    }
+
 }
 
 
