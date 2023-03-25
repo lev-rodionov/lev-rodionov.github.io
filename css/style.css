@@ -25,74 +25,6 @@ p {
     flex-direction: column;
 
 }
-/* Table
-====================================================*/
-table {
-    display: flex;
-    padding-top: 10px;
-    text-align: center;
-    border-collapse: collapse;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-
-
-.main {
-
-    border-top: 1px solid #8c8c8c;
-}
-
-.str {
-    border-top: 1px solid #8c8c8c;
-    transition: .5s;
-
-
-}
-th {
-
-    font-weight: 300;
-    color: #8c8c8c;
-    text-transform: uppercase;
-    font-size: 15px;
-
-
-}
-td:first-child {/*Отступ Курсовая*/
-    padding-left: 5px;
-    text-align: left;
-}
-
-td:last-child {/*Отступ 2.000*/
-    padding-right: 5px;
-    text-align: right;
-
-}
-th:first-child {/*Отступ Тип*/
-    text-align: left;
-    padding-left: 5px;
-    padding-right: 200px;
-}
-
-th:last-child {/*Отступ Цена от*/
-    text-align: right;
-    padding-right: 5px;
-
-}
-
-.str:hover {
-    background-color: #8c8c8c;
-    color: #fff;
-}
-
-
-
-
-
-
-
 
 
 
@@ -168,9 +100,11 @@ th:last-child {/*Отступ Цена от*/
 
 
 .nav_link:hover {
-
     text-decoration: underline;
+
 }
+
+
 
 /* Block-1
 ====================================================*/
@@ -246,6 +180,68 @@ margin-top: 15px;
 
 
 }
+
+/* Таблица
+====================================================*/
+table {
+    display: flex;
+    padding-top: 10px;
+    text-align: center;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main {
+
+    border-top: 1px solid #8c8c8c;
+}
+
+.str {
+    border-top: 1px solid #8c8c8c;
+    transition: .5s;
+
+
+}
+th {
+
+    font-weight: 300;
+    color: #8c8c8c;
+    text-transform: uppercase;
+    font-size: 15px;
+
+
+}
+td:first-child {/*Отступ Курсовая*/
+    padding-left: 5px;
+    text-align: left;
+}
+
+td:last-child {/*Отступ 2.000*/
+    padding-right: 5px;
+    text-align: right;
+
+}
+th:first-child {/*Отступ Тип*/
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 200px;
+}
+
+th:last-child {/*Отступ Цена от*/
+    text-align: right;
+    padding-right: 5px;
+
+}
+
+.str:hover {
+    background-color: #8c8c8c;
+    color: #fff;
+}
+
+
+
 
 /* Кнопка
 ====================================================*/
@@ -547,10 +543,10 @@ summary {
 .burger {
     display: none;
     padding: 9px 2px;
-
     background: none;
     border: 0;
     cursor: pointer;
+    outline: none;/*убирает золотую рамку*/
 }
 .burger_item {
     display: block;
