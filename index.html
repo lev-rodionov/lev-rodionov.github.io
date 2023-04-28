@@ -5,13 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="заказать курсовую работу, дипломную работу">
+    <meta name="keywords" content="заказать курсовую работу, дипломную работу">
+
+    <title>lev-rodionov</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <meta name="description" content="Консультируем с: курсовыми, дипломными, рефератами, контрольными работами, вкр, помогаем с презентации">
-    <meta name="keywords"
-          content="курсовая, дипломная, реферат, вкр, контрольная, презентация">
-    <title>Лев Родионов</title>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -25,63 +26,352 @@
             trackLinks:true,
             accurateTrackBounce:true,
             webvisor:true
-        });
+        });/*Y.M*/
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/92113106" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
+    <!--Скрипты-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-
-<div class="page">
-    <!--Header-->
-    <header class="header">
-        <div class="container">
-
-
-            <nav class="header-nav">
-                <a class="header-nav-link active" href="index.html">Главная</a>
-                <a class="header-nav-link" href="about.html">О нас</a>
-            </nav>
-
-        </div><!--/.container-->
-    </header>
+<!--HEADER-->
+<header class="header" id="header">
     <div class="container">
-        <div class="window-logo">
-            <h1 class="title">Лев Родионов - онлайн сервис помощи студентам.</h1>
-        </div>
+        <nav class="nav" id="nav">
+            <a class="nav_link" href="#" data-scroll="#b1">Главная</a>
+            <a class="nav_link" href="#" data-scroll="#b2">Как работаем</a>
+            <a class="nav_link" href="#" data-scroll="#b3">Вопросы</a>
+            <a class="nav_link" href="#" data-scroll="#b4">Отзывы</a>
+        </nav>
+        <button class="burger" type="button" id="navToggle">
+            <span class="burger_item">Menu</span>
+        </button>
+
+
     </div>
-    <!--Окно-->
-    <div class="container">
-        <div class="window">
+</header> <!--HEADER-->
 
 
-            <!--Заказ-->
-            <div class="window-inner">
-                <div class="container">
-                    <h1 class="title">Консультация</h1>
+<!--BLOCK-1-->
+<div class="page"><!/.--page-->
+
+    <div class="b1" id="b1">
+
+        <div class="b1_container">
+            <div class="b1_inner">
+                <div class="b1_title">
+                    <h1>Лев Родионов - онлайн сервис помощи студентам.</h1>
                 </div>
-                <div class="container">
-                    <p>Заказать консультацию вы можете через нашу группу Вконтакте</p>
-                </div>
-                <div class="container-btn">
+                <div class="b1_window">
+                    <div class="b1_title2">Прайс-лист</div>
+                    <div class="b1_text">Заказать можете через нашу группу Вконтакте</div>
+
+                    <table>
+                        <tr class="main">
+                            <th>Тип</th>
+                            <th>Цена от</th>
+                        </tr>
+                        <tr class="str">
+                            <td>Курсовая</td>
+                            <td>2.000р.</td>
+                        </tr>
+                        <tr class="str">
+                            <td>Дипломная</td>
+                            <td>10.000р.</td>
+                        </tr>
+                        <tr class="str">
+                            <td>Реферат</td>
+                            <td>1.000р.</td>
+                        </tr>
+                        <tr class="str">
+                            <td>Антиплагиат</td>
+                            <td>500р.</td>
+                        </tr>
+                        <tr class="str">
+                            <td>Другое</td>
+                            <td>в лс</td>
+                        </tr>
+                    </table>
+
+
+
+
                     <!--Кнопка-->
-                    <a class="btn" href="https://vk.com/1ev_rodionov" target="_blank">Заказать</a>
+                    <div class="container-btn">
+                        <a class="btn btn-1" href="https://vk.com/1ev_rodionov" target="_blank">Заказать</a>
+                    </div>
+                    <!--container-btn-->
                 </div>
+                <!--b1_window-->
+
+            </div>
+            <!--b1_inner-->
+        </div>
+        <!--b1_container-->
+
+    </div>
+
+
+    <!--BLOCK-2-->
+    <div class="b2" id="b2"><!--блок2-->
+        <div class="b2_container">
+
+            <div class="b2_title">
+                <h3>Как мы работаем</h3>
+            </div>
+            <div class="features">
+                <div class="features_item"><!--иконка1-->
+                    <img class="features_icon" src="img/features/icon1.png" alt="">
+                    <h4 class="features_title">Присылаете задание</h4>
+                </div>
+                <div class="features_item"><!--иконка2-->
+                    <img class="features_icon" src="img/features/icon2.png" alt="">
+                    <h4 class="features_title">Мы оцениваем</h4>
+                </div>
+                <div class="features_item"><!--иконка3-->
+                    <img class="features_icon" src="img/features/icon3.png" alt="">
+                    <h4 class="features_title">Оплачиваете 50% и ожидаете</h4>
+                </div>
+                <div class="features_item"><!--иконка4-->
+                    <img class="features_icon" src="img/features/icon4.png" alt="">
+                    <h4 class="features_title">Вносите остальную сумму и получаете работу</h4>
+                </div>
+
+            </div>
+            <!--features-->
+
+        </div>
+    </div><!--блок2-->
+
+    <div class="b3" id="b3"><!--блок3-->
+        <div class="b3_container">
+            <div class="b3_title">
+                <h5>Вопросы и ответы</h5>
+            </div>
+            <div class="b3_inner">
+                <ol class="list">
+                    <li>
+                        <details>
+                            <summary class="list">Чем занимаемся?</summary>
+                            <em>Помогаем студентам с такими работами как: курсовая, дипломная, реферат, статья и т.д.</em>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="list">Как заказать?</summary>
+                            <em>Заказать можно в группе Вконтакте. Жми на кнопку "заказать".</em>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="list">Сколько стоит?</summary>
+                            <em>Цена рассчитывается от требуемого задания.<br>Пришлите всё, что выдал преподаватель,
+                                чтобы мы могли рассчитать.</em>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="list">Сколько по времени займет?</summary>
+                            <em>Среднее время составляет 7-10 дней.</em>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="list">Сколько составляет предоплата?</summary>
+                            <em>Предоплата составляет 50%.</em>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="list">Как я могу оплатить?</summary>
+                            <em>Оплатить можете с любой карты Мир/Visa/Mastercard.</em>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="list">Доработки бесплатны?</summary>
+                            <em>Все корректировки бесплатны в рамках задания.</em>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="list">Где мы находимся?</summary>
+                            <em>Наш офис находится по адресу: Третьяковский пр-д, 1/4, Москва, 109012.</em>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="list">Нужно ли ехать в офис, чтобы заказать?</summary>
+                            <em>Нет, мы работаем онлайн по все России.</em>
+                        </details>
+                    </li>
+                </ol>
+
+
             </div>
         </div>
-    </div><!--/.cont-->
-    <!--Кнопка-->
+    </div><!--блок3-->
+
+    <!--Reviews-->
+    <div class="b4" id="b4"><!--блок4-->
+        <div class="b4_container"><!--b4_container-->
+            <div class="b4_title">
+                <div class="triangle-left"></div>
+                <div><h6>Отзывы</h6></div>
+                <div class="triangle-right"></div>
+            </div><!--b4_title-->
 
 
+            <div class="reviews_slider" id="reviewsSlider"><!--Слайдер-->
+
+
+                <div class="slick_item"><!--СЛАЙДЕР1-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev1.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР1-->
+
+
+                <div class="slick_item"><!--СЛАЙДЕР2-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev2.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР2-->
+
+                <div class="slick_item"><!--СЛАЙДЕР3-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev3.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР3-->
+
+                <div class="slick_item"><!--СЛАЙДЕР4-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev4.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР4-->
+
+                <div class="slick_item"><!--СЛАЙДЕР5-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev5.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР5-->
+
+                <div class="slick_item"><!--СЛАЙДЕР6-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev6.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР6-->
+
+                <div class="slick_item"><!--СЛАЙДЕР7-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev7.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР7-->
+
+                <div class="slick_item"><!--СЛАЙДЕР8-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev8.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР8-->
+
+                <div class="slick_item"><!--СЛАЙДЕР9-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev9.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР9-->
+
+                <div class="slick_item"><!--СЛАЙДЕР10-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev10.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР10-->
+
+                <div class="slick_item"><!--СЛАЙДЕР111-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev11.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР11-->
+
+                <div class="slick_item"><!--СЛАЙДЕР12-->
+                    <div class="b4_photo"><!--b4_photo-->
+                        <div class="photo">
+                            <img class="reviews_img" src="img/reviews/rev12.jpg" alt="">
+                        </div><!--photo-->
+                    </div><!--b4_photo-->
+                </div><!--СЛАЙДЕР12-->
+            </div><!--/reviewsSlider-->
+
+        </div><!--b4_container-->
+    </div><!--блок4-->
+
+
+
+
+</div><!--page-->
+<div class="footer">
+    <div class="f_block">
+
+        <div class="footer_inner">
+
+            <div class="footer_block f_1"><!--1-->
+                <div class="footer_title">Локация</div><!--footer_title-->
+                <address class="footer_address">
+                    <div>Третьяковский пр-д, 1/4, Москва, 109012.</div>
+                </address>
+            </div><!--footer_block-->
+
+
+
+        <div class="footer_block f_2"><!--2-->
+
+            <!--Кнопка-->
+            <div class="container-btn">
+                <a class="btn btn-1" href="https://vk.com/1ev_rodionov" target="_blank">Заказать</a>
+            </div><!--container-btn-->
+        </div><!--footer_block2-->
+
+            <div class="footer_block f_3"><!--3-->
+                <div class="footer_title">Контакты</div><!--footer_title-->
+                <address class="footer_address">
+                    <div><a class="mail" href="mailto:levrodionov2016@gmail.com">levrodionov2016@gmail</a>
+                        </div>
+
+                </address>
+            </div><!--footer_block3-->
+
+    </div><!--footer_inner-->
+
+<div class="copyright">
+    <div class="copyright_text">
+        Copyright ⓒ Лев Родионов, 2011-2023.
+    </div>
 </div>
 
-
-<!--Footer-->
-<footer class="footer">
-    <div class="container">
-        <a class="mail" href="mailto:levrodionov2016@gmail.com">levrodionov2016@gmail.com</a>
-    </div>
-</footer>
-
+    </div><!--f_block-->
+</div><!--footer-->
+<!--Javascript-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
+
